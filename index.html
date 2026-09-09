@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Carneiro Bomfim</title>
     <style>
+        /* O estilo Dan Luu / Norvig: intervir o mínimo possível no padrão do navegador */
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
             max-width: 750px; 
-            margin: 50px auto; 
-            padding: 0 20px; 
+            margin: 40px auto; 
+            padding: 0 15px; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Karpathy usa fonte sem serifa para legibilidade */
             line-height: 1.6; 
-            color: #222; 
+            color: #000; 
+            background: #fff;
         }
-        h1, h2 { color: #000; margin-top: 2em; }
-        a { color: #0056b3; text-decoration: none; border-bottom: 1px solid transparent; }
-        a:hover { border-bottom: 1px solid #0056b3; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        h1, h2, h3 { color: #000; font-weight: bold; }
+        a { color: #0000EE; text-decoration: underline; }
+        a:visited { color: #551A8B; } /* Padrão clássico da web para links visitados */
+        blockquote { border-left: 3px solid #ccc; margin-left: 0; padding-left: 15px; font-style: italic; color: #444; }
+        .date { font-family: monospace; color: #555; }
     </style>
 </head>
 <body>
+
     <h1>Gabriel Carneiro Bomfim</h1>
-    <p>Olá. Este é o meu espaço pessoal e portfólio técnico.</p>
+    <p>
+        <a href="#cv">CV</a> | 
+        <a href="#projetos">Projetos</a> | 
+        <a href="#filosofia">Filosofia</a> | 
+        <a href="#poesia">Poesia</a> | 
+        <a href="https://github.com/gabrielcbomfim">GitHub</a> | 
+        <a href="mailto:seu-email@gmail.com">Email</a>
+    </p>
 
-    <h2>Sobre Mim</h2>
-    <p>Minha base analítica foi forjada no rigor das competições de matemática avançada (como OBM, IMO e Cone Sul). Atualmente, meu foco de execução técnica envolve a arquitetura em nuvem e o desenvolvimento de modelos generativos, aliado ao estudo contínuo do idioma francês.</p>
+    <p>
+        Este é o meu diretório pessoal. Aqui documento minha atuação profissional técnica, ensaios filosóficos e textos literários, tudo no mesmo espaço. 
+    </p>
 
-    <h2>Projetos e Implementações</h2>
+    <hr>
+
+    <h2 id="cv">Currículo e Fundações</h2>
     <ul>
-        <li><strong>Integração de IA Generativa:</strong> Construção, teste e integração de modelos utilizando o ambiente do Google AI Studio.</li>
-        <li><strong>Infraestrutura e APIs (Cloud):</strong> Gerenciamento de serviços de infraestrutura e armazenamento no Google Cloud, com estruturação e verificação rigorosa de requisições de API via Postman.</li>
-        <li><strong>Raciocínio Lógico e Matemática:</strong> Histórico de treinamentos de seleção e resolução de problemas complexos de exatas.</li>
+        <li><strong>Foco Atual:</strong> Desenvolvimento com IA Generativa, infraestrutura Google Cloud, integrações de APIs e arquitetura de sistemas.</li>
+        <li><strong>Base Analítica:</strong> Raciocínio lógico forjado em treinamentos de seleção e nas competições de alto nível (OBM, IMO, Cone Sul).</li>
+        <li><strong>Idiomas:</strong> Estudos contínuos da língua francesa, explorando novas sintaxes e lógicas estruturais.</li>
     </ul>
 
-    <h2>Contato</h2>
+    <h2 id="projetos">Projetos Técnicos</h2>
     <ul>
-        <li><a href="https://github.com/SEU-USUARIO">GitHub</a></li>
-        <li><a href="mailto:seu-email@gmail.com">Email</a></li>
+        <li><a href="#">Implementações no Google AI Studio</a> - Testes e integrações utilizando a API do Gemini.</li>
+        <li><a href="#">Arquitetura de Requisições</a> - Automação e verificação de serviços de armazenamento em nuvem via Postman.</li>
     </ul>
+
+    <h2 id="filosofia">Artigos & Filosofia</h2>
+    <ul>
+        <li><span class="date">[2026-09]</span> <a href="#">O rigor matemático aplicado à engenharia de software</a></li>
+        <li><span class="date">[2026-08]</span> <a href="#">A linguagem como algoritmo: paralelos entre o francês e a programação</a></li>
+    </ul>
+
+    <h2 id="poesia">Poesia</h2>
+    <p>Um arquivo para palavras que não precisam compilar.</p>
+    
+    <h3>Autorais</h3>
+    <ul>
+        <li><a href="#">Título do seu poema aqui</a></li>
+    </ul>
+
+    <h3>De Outros</h3>
+    <blockquote>
+        "E no meio do inverno, eu finalmente descobri que havia em mim um verão invencível."<br>
+        — Albert Camus
+    </blockquote>
+
 </body>
 </html>
