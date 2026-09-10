@@ -4,81 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Carneiro Bomfim</title>
-    <style>
-        /* O estilo Dan Luu / Norvig: intervir o mínimo possível no padrão do navegador */
-        body { 
-            max-width: 750px; 
-            margin: 40px auto; 
-            padding: 0 15px; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Karpathy usa fonte sem serifa para legibilidade */
-            line-height: 1.6; 
-            color: #000; 
-            background: #fff;
-        }
-        h1, h2, h3 { color: #000; font-weight: bold; }
-        a { color: #0000EE; text-decoration: underline; }
-        a:visited { color: #551A8B; } /* Padrão clássico da web para links visitados */
-        blockquote { border-left: 3px solid #ccc; margin-left: 0; padding-left: 15px; font-style: italic; color: #444; }
-        .date { font-family: monospace; color: #555; }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Seletor de Idiomas -->
-    <div style="text-align: right; font-size: 1.5em; margin-bottom: 20px;">
-        <a href="index.html" style="text-decoration: none;" title="Português">🇧🇷</a>
-        <a href="en.html" style="text-decoration: none;" title="English">🇺🇸</a>
-        <a href="fr.html" style="text-decoration: none;" title="Français">🇫🇷</a>
-    </div>
+    <h1>Gabriel Carneiro Bomfim</h1>
 
-    <h1>Gabriel Carneiro Bomfim</h1>
-    <h1>Gabriel Carneiro Bomfim</h1>
     <p>
-        <a href="#cv">CV</a> | 
-        <a href="#projetos">Projetos</a> | 
-        <a href="#filosofia">Filosofia</a> | 
-        <a href="#poesia">Poesia</a> | 
         <a href="https://github.com/gabrielcbomfim">GitHub</a> | 
         <a href="https://www.linkedin.com/in/gabrielcbomfim/">Linkedin</a>
     </p>
 
+    <div class="language-switcher">
+        <a class="flag" href="index.html" title="Português"><img src="assets/img/flags/br.svg" width="20" alt="BR"></a>
+        <a class="flag" href="en/index.html" title="English"><img src="assets/img/flags/us.svg" width="20" alt="US"></a>
+        <a class="flag" href="fr/index.html" title="Français"><img src="assets/img/flags/fr.svg" width="20" alt="FR"></a>
+    </div>
+
     <p>
-        Este é o meu diretório pessoal. Aqui documento minha atuação profissional técnica, ensaios filosóficos e textos literários, tudo no mesmo espaço. 
+        Bem-vindo à minha página pessoal. Obrigado pela visita!
     </p>
 
     <hr>
 
-    <h2 id="cv">Currículo e Fundações</h2>
-    <ul>
-        <li><strong>Foco Atual:</strong> Desenvolvimento com IA Generativa, infraestrutura Google Cloud, integrações de APIs e arquitetura de sistemas.</li>
-        <li><strong>Base Analítica:</strong> Raciocínio lógico forjado em treinamentos de seleção e nas competições de alto nível (OBM, IMO, Cone Sul).</li>
-        <li><strong>Idiomas:</strong> Estudos contínuos da língua francesa, explorando novas sintaxes e lógicas estruturais.</li>
-    </ul>
+    <div class="page-layout">
+        <aside class="left-panel">
+            <table class="nav-table">
+                <tbody>
+                    <tr><td><a href="index.html">Home</a></td></tr>
+                    <tr><td><a href="cv/index.html">CV</a></td></tr>
+                    <tr><td><a href="projects/index.html">Projetos</a></td></tr>
+                    <tr><td><a href="philosophy/index.html">Reflexões</a></td></tr>
+                    <tr><td><a href="poetry/index.html">Diversão</a></td></tr>
+                </tbody>
+            </table>
+        </aside>
 
-    <h2 id="projetos">Projetos Técnicos</h2>
-    <ul>
-        <li><a href="#">Implementações no Google AI Studio</a> - Testes e integrações utilizando a API do Gemini.</li>
-        <li><a href="#">Arquitetura de Requisições</a> - Automação e verificação de serviços de armazenamento em nuvem via Postman.</li>
-    </ul>
-
-    <h2 id="filosofia">Artigos & Filosofia</h2>
-    <ul>
-        <li><span class="date">[2026-09]</span> <a href="#">O rigor matemático aplicado à engenharia de software</a></li>
-        <li><span class="date">[2026-08]</span> <a href="#">A linguagem como algoritmo: paralelos entre o francês e a programação</a></li>
-    </ul>
-
-    <h2 id="poesia">Poesia</h2>
-    <p>Um arquivo para palavras que não precisam compilar.</p>
-    
-    <h3>Autorais</h3>
-    <ul>
-        <li><a href="#">Título do seu poema aqui</a></li>
-    </ul>
-
-    <h3>De Outros</h3>
-    <blockquote>
-        "E no meio do inverno, eu finalmente descobri que havia em mim um verão invencível."<br>
-        — Albert Camus
-    </blockquote>
-
+        <main class="right-panel">
+            <section class="photo-panel">
+                <div class="photo-content">
+                    <div class="photo-frame">
+                        <img src="assets/img/profile.jpg" alt="Gabriel Carneiro Bomfim">
+                    </div>
+                    <div class="bio-column">
+                        <p class="bio-caption">Estudante de Matemática Aplicada na <a href="https://www.polytechnique.edu">École Polytechnique</a>.</p>
+                        <p class="bio-caption">Estudante de Engenharia da Computação no <a href="http://www.ita.br/">Instituto Tecnológico de Aeronáutica</a>, em duplo diploma.</p>
+                        <p class="bio-caption">Neste momento, me dedico ao treinamento de redes neurais aplicadas ao controle de sistemas multiagentes.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
