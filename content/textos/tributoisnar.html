@@ -45,7 +45,7 @@
 
                     <p>Então, caminhemos.</p>
 
-                    <p><a id="home-link" href="../../">Voltar para a página inicial</a></p>
+                    <p><a id="home-link" href="../../textos/">Voltar para a página de textos</a></p>
                 </section>
             </main>
         </div>
@@ -53,14 +53,14 @@
             const params = new URLSearchParams(window.location.search);
             const lang = params.get('lang') || 'pt';
             const homeMap = {
-                'pt': '../../',
-                'en': '../../en/',
-                'fr': '../../fr/'
+                'pt': '../../textos/',
+                'en': '../../en/textos/',
+                'fr': '../../fr/textos/'
             };
             const homeText = {
-                'pt': 'Voltar para a página inicial',
-                'en': 'Back to the home page',
-                'fr': 'Retour à la page d’accueil'
+                'pt': 'Voltar para a página de textos',
+                'en': 'Back to the texts page',
+                'fr': 'Retour à la page des textes'
             };
             document.getElementById('home-link').href = homeMap[lang] || homeMap.pt;
             document.getElementById('home-link').textContent = homeText[lang] || homeText.pt;
