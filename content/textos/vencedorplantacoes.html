@@ -55,20 +55,7 @@
 
                     <section class="comments" aria-labelledby="comments-title">
                         <h2 id="comments-title">Comentários</h2>
-                        <script src="https://giscus.app/client.js"
-                                data-repo="gabrielcbomfim/gabrielcbomfim.github.io"
-                                data-repo-id="R_kgDOUS1XRw"
-                                data-category="General"
-                                data-mapping="pathname"
-                                data-strict="0"
-                                data-reactions-enabled="1"
-                                data-emit-metadata="0"
-                                data-input-position="top"
-                                data-theme="light"
-                                data-lang="pt"
-                                crossorigin="anonymous"
-                                async>
-                        </script>
+                        <div id="giscus-comments"></div>
                     </section>
 
                     <p><a id="home-link" href="../../textos/">Voltar para a página de textos</a></p>
@@ -90,6 +77,31 @@
             };
             document.getElementById('home-link').href = homeMap[lang] || homeMap.pt;
             document.getElementById('home-link').textContent = homeText[lang] || homeText.pt;
+
+            const commentsText = {
+                'pt': 'Comentários',
+                'en': 'Comments',
+                'fr': 'Commentaires'
+            };
+            const commentsTitle = document.getElementById('comments-title');
+            commentsTitle.textContent = commentsText[lang] || commentsText.pt;
+
+            const giscus = document.createElement('script');
+            giscus.src = 'https://giscus.app/client.js';
+            giscus.dataset.repo = 'gabrielcbomfim/gabrielcbomfim.github.io';
+            giscus.dataset.repoId = 'R_kgDOUS1XRw';
+            giscus.dataset.category = 'General';
+            giscus.dataset.mapping = 'pathname';
+            giscus.dataset.strict = '0';
+            giscus.dataset.reactionsEnabled = '1';
+            giscus.dataset.emitMetadata = '0';
+            giscus.dataset.inputPosition = 'top';
+            giscus.dataset.theme = 'light';
+            giscus.dataset.lang = lang === 'en' || lang === 'fr' ? lang : 'pt';
+            giscus.dataset.loading = 'lazy';
+            giscus.crossOrigin = 'anonymous';
+            giscus.async = true;
+            document.getElementById('giscus-comments').appendChild(giscus);
         </script>
     </body>
 </html>
