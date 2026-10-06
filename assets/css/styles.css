@@ -27,6 +27,15 @@ body > p {
   text-align: center;
 }
 
+.comments {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.comments h2 {
+  text-align: left;
+}
+
 .social-links,
 .language-switcher,
 .top-nav ul {
