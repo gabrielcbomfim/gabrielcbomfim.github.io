@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   max-width: 750px;
   margin: 40px auto;
@@ -372,15 +376,15 @@ body:not(.home-page) > hr {
 
 .site-header {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px 24px;
+  gap: 8px 20px;
 }
 
 .site-name {
   color: #000;
   text-decoration: none;
-  margin-right: auto;
 }
 
 .site-nav {
@@ -403,12 +407,34 @@ body:not(.home-page) > hr {
 .site-langs {
   display: flex;
   gap: 6px;
+  padding-left: 20px;
+  border-left: 1px solid #d9d9d9;
 }
 
 .site-langs img {
   display: block;
 }
 
-.home-page .bio-column .social-links {
-  margin-top: 12px;
+.home-page .social-links {
+  gap: 24px;
+  margin: 0 0 4px;
+}
+
+.home-page .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.home-page .social-links a:hover {
+  color: #000;
+}
+
+.home-page .social-links svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
 }
