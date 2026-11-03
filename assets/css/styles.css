@@ -378,8 +378,6 @@ body:not(.home-page) > hr {
 }
 
 .site-name {
-  font-weight: bold;
-  font-size: 1.1em;
   color: #000;
   text-decoration: none;
   margin-right: auto;
@@ -395,6 +393,8 @@ body:not(.home-page) > hr {
   text-decoration: none;
 }
 
+.site-name:hover,
+.site-name[aria-current="page"],
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
   text-decoration: underline;
@@ -411,13 +411,4 @@ body:not(.home-page) > hr {
 
 .home-page .bio-column .social-links {
   margin-top: 12px;
-}
-
-body:not(.home-page) .site-name {
-  font-weight: normal;
-  font-size: 1em;
-}
-
-body:not(.home-page) .site-name:hover {
-  text-decoration: underline;
 }
