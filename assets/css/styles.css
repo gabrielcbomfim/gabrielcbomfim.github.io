@@ -369,3 +369,55 @@ body:not(.home-page) > hr {
   text-align: left;
   margin-top: 28px;
 }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.site-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #000;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.site-langs {
+  display: flex;
+  gap: 6px;
+}
+
+.site-langs img {
+  display: block;
+}
+
+.home-page .bio-column .social-links {
+  margin-top: 12px;
+}
+
+body:not(.home-page) .site-name {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+body:not(.home-page) .site-name:hover {
+  text-decoration: underline;
+}
